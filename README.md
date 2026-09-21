@@ -1,13 +1,14 @@
 # AI Landscape
 
-My version-controlled personal AI setup for Codex. It currently contains custom agents and the Improve skill, with room to add more shared skills and configuration over time.
+My version-controlled personal AI setup for Codex. It currently contains custom agents and the Improve and Council skills, with room to add more shared skills and configuration over time.
 
 The repository is the source of truth. A bootstrap script connects its contents to the personal Codex configuration directory with Windows directory junctions, so edits are immediately available to Codex while remaining tracked in Git.
 
 ## Included setup
 
 - `agents/` contains the personal `researcher`, `implementer`, `developer`, `reviewer`, `specialist`, and `expert` agents.
-- `skills/` contains personal Codex skills, currently Improve.
+- `skills/` contains the Improve skill and a locally adapted copy of
+  [tsenart/council-skill](https://github.com/tsenart/council-skill).
 - `scripts/Connect-CodexSetup.ps1` connects the repository-owned directories to the corresponding personal Codex paths.
 
 ## Connect to Codex on Windows
