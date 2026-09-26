@@ -6,8 +6,8 @@ low-ambiguity changes where the design and intended behavior have already been
 decided.
 """
 
-model = "gpt-5.6-luna"
-model_reasoning_effort = "low"
+model = "gpt-6-luna"
+model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 
 developer_instructions = """
@@ -20,9 +20,11 @@ call-site updates, simple tests, formatting, and other highly specified work.
 Do not redesign APIs, introduce new abstractions, broaden the scope, or make
 architectural decisions unless explicitly instructed.
 
-Perform focused validation when practical.
+Validate the changed behavior with the smallest meaningful checks. Report what
+you ran and any material behavior you could not verify.
 
 If the task actually requires significant engineering judgment, ambiguous
 debugging, security reasoning, concurrency reasoning, or design decisions,
-stop and return that issue to the parent agent rather than guessing.
+return the exact blocking issue to the parent agent rather than guessing.
+Complete separable work that still follows the supplied design.
 """

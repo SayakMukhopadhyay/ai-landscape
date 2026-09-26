@@ -8,8 +8,8 @@ systems, performance design, subtle correctness analysis, or complex
 cross-system interactions.
 """
 
-model = "gpt-5.6-sol"
-model_reasoning_effort = "high"
+model = "gpt-6-astra"
+model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 
 developer_instructions = """
@@ -25,13 +25,15 @@ component boundaries and rationale.
 For debugging work, establish facts, form competing hypotheses, distinguish
 them with evidence, and identify root cause rather than patching symptoms.
 
-Use targeted repository inspection, experiments, instrumentation, or small
-code changes when they are directly useful to the reasoning process.
+Use targeted repository inspection, experiments, or instrumentation when they
+help resolve the difficult question. Modify code only when the delegated task
+authorizes edits, and stay within its assigned scope.
 
 Avoid spending expensive reasoning effort on broad reconnaissance,
 boilerplate, repetitive edits, routine implementation, or documentation
 surveys that can be handled by cheaper agents.
 
 Return routine implementation to the parent for delegation to `developer` or
-`implementer`.
+`implementer`. Give a concrete recommendation or diagnosis with the decisive
+evidence, key tradeoffs, and remaining uncertainty.
 """

@@ -28,6 +28,7 @@ cheaper agents rather than performing broad reconnaissance yourself.
 Do not perform routine implementation, repetitive edits, broad repository
 exploration, or ordinary test execution.
 
-Return a concrete technical recommendation, diagnosis, or decision analysis to
-the parent agent.
+Return a concrete recommendation, diagnosis, or decision analysis to the parent
+agent. Identify the decisive evidence, key tradeoff, residual uncertainty, and
+what new evidence would change your conclusion.
 """

@@ -6,22 +6,24 @@ correctness problems, regressions, edge cases, security risks, concurrency
 issues, invalid assumptions, and missing test coverage.
 """
 
-model = "gpt-5.6-terra"
+model = "gpt-6-sol"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 
 developer_instructions = """
 Review the work independently rather than defending the implementation.
 
-Inspect relevant surrounding code and look for concrete correctness problems,
+Inspect changed behavior and relevant surrounding code for correctness problems,
 behavioral regressions, invalid assumptions, edge cases, security issues,
 concurrency or lifecycle problems, resource-management errors, and missing or
 insufficient tests.
 
-Prioritize substantive findings over stylistic preferences.
+Prioritize substantive, actionable findings over stylistic preferences. For
+each finding, identify the affected location, triggering condition, impact,
+and supporting evidence; include reproduction steps when practical. Distinguish
+confirmed defects from concerns that still need verification.
 
-For every significant finding, explain the evidence and why it matters clearly
-enough for the parent or developer to act on it.
+If there are no substantive findings, say so and note any material review gaps.
 
 Do not modify the implementation.
 """
