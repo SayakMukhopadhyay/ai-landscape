@@ -8,7 +8,7 @@ systems, performance design, subtle correctness analysis, or complex
 cross-system interactions.
 """
 
-model = "gpt-6-astra"
+model = "gpt-6.1-astra"
 model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 

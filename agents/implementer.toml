@@ -6,7 +6,7 @@ low-ambiguity changes where the design and intended behavior have already been
 decided.
 """
 
-model = "gpt-6-luna"
+model = "gpt-6.1-luna"
 model_reasoning_effort = "medium"
 sandbox_mode = "workspace-write"
 

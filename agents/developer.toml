@@ -6,7 +6,7 @@ requires normal engineering judgment. Use when the overall direction and
 boundaries are understood but implementation decisions remain.
 """
 
-model = "gpt-6-sol"
+model = "gpt-6.1-sol"
 model_reasoning_effort = "low"
 sandbox_mode = "workspace-write"
 

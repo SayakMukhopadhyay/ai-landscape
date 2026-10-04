@@ -7,7 +7,7 @@ existing behavior, find analogous implementations and tests, and investigate
 relevant framework, library, API, or external documentation.
 """
 
-model = "gpt-6-sol"
+model = "gpt-6.1-sol"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 
